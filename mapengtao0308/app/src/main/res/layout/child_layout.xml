@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#C3C3C3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/child_checkbox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/child_image"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/child_title"
+                android:layout_width="500dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="标题" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="价格"
+                    android:textColor="#f00" />
+
+            <com.bw.mapengtao0308.weiget.Z_View
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></com.bw.mapengtao0308.weiget.Z_View>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
